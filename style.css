@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cecece;
+}
+.container
+{
+    background-color: #cecece;
+}
+.image
+{
+    width: 100%;
+    height: 60px;
+    background-image: url('img/imgtop.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.header1
+{
+    height: 24px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+nav
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 40%;
+    gap: 20px;
+    
+}
+
+.header2
+{
+    height: 80px;
+    width: auto;
+    background-color: blue;
+}
+.blocSection
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 385px;
+    gap: 1rem;
+    background-color: #cecece;
+    margin: 15px 0px;
+}
+.section1
+{
+    height: inherit;
+    width: 225px;
+    background-color: brown;
+  
+}
+.section2
+{
+    height: inherit;
+    width: auto;
+    position: relative;
+  
+}
+.background
+{
+   width :634px;
+   height :420px;
+
+}
+.section3
+{
+    height: inherit;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section3_1, .section3_2
+{
+    width: 220px;
+    height: 190px;
+   
+  
+}
+.SECTION4
+{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+   
+}
+.section4
+{
+    width: 75%;
+    height: 145px;
+    padding: 10px;
+    overflow-x: scroll;
+    background-color: white;
+    padding-left: 0px;
+}
+::-webkit-scrollbar
+{ 
+    display: none;
+}
+.section4-element
+{
+    width: 126px;
+    height: 120px;
+    border-radius: 35px;
+    background-color: green;
+}
+.section4-element:first-child
+{
+    margin-left: 10px;
+}
+.container-section4
+{
+    width: 175%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+fa-solid fa-circle-star
+{
+    font-size: 20px;
+    color: white;
+}
+#background
+{
+    width : 634px;
+    height : 430px;
+    position: relative;
+}
+.container-left-bottom, .container-right-bottom
+{
+    height: 145px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    
+}
+.container-left-bottom
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 6px;
+}
+.container-right-bottom
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-right: 7px;
+}
+.left, .right, .left-bottom
+{
+    top: 200px;
+    color: white;
+    font-size: 15px;
+    background-color:rgb(88 89 83 / 55%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.left, .right
+{
+    position: absolute;
+}
+
+.left{
+    left: 10px;
+}
+.right
+{
+    right: 10px;
+   
+}
+.left:hover, .right:hover, .left-bottom:hover
+{
+    background-color: rgb(66, 66, 66);
+    cursor: pointer;
+   
+}
+.section3_2
+{
+    background-image: url('img/jumia.gif');
+}
+
+#titre:hover
+{
+    color: blue;
+}
+#myAnimation
+{
+    
+    transition-duration:  2s; 
+}
+.animRight
+{
+    transform: translate(-551px,0px);
+}
+.animLeft
+{
+    transform: translate(0px,0px);
+}
+.imgbas
+{
+    width: inherit;
+    height: inherit;
+}
