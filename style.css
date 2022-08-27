@@ -11,9 +11,15 @@ body{
 {
     background-color: #cecece;
 }
+.background-top
+{
+    background-color: #F68B1E;
+    display: flex;
+    justify-content: center;
+}
 .image
 {
-    width: 100%;
+    width: 80%;
     height: 60px;
     background-image: url('img/imgtop.jpg');
     background-size: cover;
@@ -27,7 +33,7 @@ body{
     width: auto;
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+    background-color: #cecece;
 }
 nav
 {
@@ -40,9 +46,68 @@ nav
 
 .header2
 {
-    height: 80px;
-    width: auto;
-    background-color: blue;
+    height: 68px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+.container-header2
+{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    width: 80%;
+    background-color: white;
+    border: 1px solid black;
+}
+.container-header2_1
+{
+    display: flex;
+    margin-left: 80px;
+}
+.container-header2 img
+{
+    height:455x;
+    width: 140px;
+   
+}
+#submit
+{
+    width: 140px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color:  #ff9A00;
+    color: white;
+    margin-left: 10px;
+}
+.search
+{
+    display: flex;
+    align-items: center;
+    border: 0.4px solid grey;
+    width: 450px;
+    height: 37px;
+    border-radius: 4px;
+    padding: 5px;
+   
+}
+.search i
+{
+    font-size: 18px;
+    padding-right: 7px;
+    color: grey;
+}
+.search input
+{
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+   
 }
 .blocSection
 {
@@ -57,9 +122,36 @@ nav
 .section1
 {
     height: inherit;
-    width: 225px;
-    background-color: brown;
+    width: 218px;
+    background-color: white;
+    padding: 10px;
   
+}
+ul li a
+{
+    margin-left: 10px;
+}
+li
+{
+    list-style: none;
+    font-size: 14px;
+    color: #282828;
+    display: flex;
+    align-items: center;
+}
+li:not(li:first-child)
+{
+    margin-top: 10px;
+}
+li a 
+{
+    text-decoration: none;
+    color: #282828;
+}
+li img 
+{
+    width: 20px;
+    height: 20px;
 }
 .section2
 {
@@ -104,14 +196,11 @@ nav
     width: 75%;
     height: 145px;
     padding: 10px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     background-color: white;
     padding-left: 0px;
 }
-::-webkit-scrollbar
-{ 
-    display: none;
-}
+
 .section4-element
 {
     width: 126px;

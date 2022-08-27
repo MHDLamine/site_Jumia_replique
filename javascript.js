@@ -4,9 +4,8 @@ var auto = 0;
 var time = 2000;
 const imgStyle = () => 
 {
-
     emplacement.style.width = "700px";
-    emplacement.style.height = "430px";
+    emplacement.style.height = "600px";
     emplacement.style.backgroundRepeat = "no-repeat";
 }
 autoDisplay = () => 
@@ -44,14 +43,14 @@ imgDisplay= (b) =>
     if( a < 1)
     {
         a = 6;
-        emplacement.style.backgroundImage = "url('img/image" + 4 + ".jpg')";
+        emplacement.style.backgroundImage = "url('img/image" + a + ".jpg')";
         imgStyle ();
       
     }
     if( a > 6)
     {
         a = 1;
-        emplacement.style.backgroundImage = "url('img/image" + 1 + ".jpg')";
+        emplacement.style.backgroundImage = "url('img/image" + a + ".jpg')";
         imgStyle ();
      
     }
