@@ -1,7 +1,8 @@
 const emplacement = document.getElementById("background");
+var nbrImg = 7;
 var a = 0;
 var auto = 0;
-var time = 2000;
+var time = 3000;
 const imgStyle = () => 
 {
     emplacement.style.width = "700px";
@@ -13,21 +14,20 @@ autoDisplay = () =>
         auto++;
         emplacement.style.backgroundImage = "url('img/image" + auto + ".jpg')";
         imgStyle ();
-        if( auto > 6)
+        if( auto > nbrImg)
         {
             auto = 1;
             emplacement.style.backgroundImage = "url('img/image" + 1 + ".jpg')";
             imgStyle ();
          
         }
-        console.log(auto);
         setTimeout("autoDisplay()", time);
     }
 
 imgDisplay= (b) => 
 {
    
-    if ( (a <= 6) && (a >= 1 ))
+    if ( (a <= nbrImg) && (a >= 1 ))
     {
         if(b == 0)
         {
@@ -47,7 +47,7 @@ imgDisplay= (b) =>
         imgStyle ();
       
     }
-    if( a > 6)
+    if( a > nbrImg)
     {
         a = 1;
         emplacement.style.backgroundImage = "url('img/image" + a + ".jpg')";
@@ -55,7 +55,7 @@ imgDisplay= (b) =>
      
     }
 }
-//ANIMATION
+//ANIMATION en bas de page
 
 function myMove(direction)
 {   
