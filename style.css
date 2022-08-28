@@ -43,6 +43,10 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+nav p:first-child{
+    color: #F68B1E;
+    opacity: 1;
+}
 .header1-left-top
 {
     display: flex;
@@ -51,13 +55,27 @@ body{
 }
 nav
 {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: center;
     margin-right: 40%;
-    gap: 20px;
-    
+    gap: 20px; 
 }
-
+nav p:not(:first-child){
+    opacity: 0.4;
+}
+.DEALS:hover{
+    opacity: 1;
+    color: rgb(11, 62, 113);
+}
+nav p:last-child:hover{
+    opacity: 1;
+    color: #F68B1E;
+}
+nav p{
+    cursor: pointer;
+}
 .header2
 {
     height: 68px;
@@ -67,6 +85,7 @@ nav
     justify-content: center;
 
 }
+
 .login
 {
     display: flex;
@@ -89,7 +108,7 @@ nav
     width: auto;
 }
 .login p{
-    margin-left: 10px;
+    margin-left: 3px;
 }
 .login #chevron-top{
     font-size: 10px;
@@ -106,6 +125,7 @@ nav
 {
     display: flex;
     margin-left: 70px;
+    margin-right: 10px;
 }
 .container-header2 img
 {
@@ -223,7 +243,7 @@ li img
 .section3_1, .section3_2
 {
     width: 207px;
-    height: 190px;
+    height: 185px;
     border-radius: 5px;
 }
 .section3_1
@@ -274,7 +294,10 @@ li img
     width: 123px;
     height: 120px;
     border-radius: 35px;
-    background-color: green;
+    cursor: pointer;
+  
+}.section4-element:hover{
+    transform: scale(1.1);
 }
 
 .container-section4
