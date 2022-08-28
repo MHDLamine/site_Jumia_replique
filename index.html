@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/fontcss/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js">
     <link rel="stylesheet" href="style.css">
     <title>Acceuil</title>
 </head>
@@ -16,12 +17,17 @@
             </div>
         </div>
         <div class="header1">
-           <p>AA</p>
-            <nav>
-                <p >FOOD</p>
-                <p >DEALS</p>
-                <p>LOGISTIC</p>
-            </nav>
+            <div class="header1-container">
+                <div class="header1-left-top">
+                    <img src="img/image produit/etoile jumia.png.png" width="14" height="14" alt="logo jumia" style="margin:0px 7px ;">
+                    <p>Vendez sur jumia</p>
+               </div>
+                <nav>
+                    <p >FOOD</p>
+                    <p >DEALS</p>
+                    <p>LOGISTIC</p>
+                </nav>
+           </div>
         </div>
         <div class="header2">
             <div class="container-header2">
@@ -32,6 +38,22 @@
                         <input type="search" placeholder="chercher un produit, une marque ou un catégorie">
                     </div>
                     <input type="submit" id="submit" value="RECHERCHER">
+                    
+                </div>
+                <div class="login">
+                    <i class="fa-regular fa-user"></i>
+                    <p>Se connecter</p>
+                    <i id="chevron-top" class="fas fa-chevron-down"></i>
+                </div>
+                <div class="login">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <p>Aide</p>
+                    <i id="chevron-top" class="fas fa-chevron-down"></i>
+                </div>
+                <div class="login">
+                    <i class="fa-regular fa-cart-shopping"></i>
+                    <p>Panier</p>
+                    <i id="chevron-top" class="fas fa-chevron-down"></i>
                 </div>
             </div>
             
@@ -68,18 +90,30 @@
                 </div>
                 <div class="section3">
                     <div class="section3_1">
+                        <div class="section3_1-ligne1">
+                            <img src="img/image produit/assistance.png" width="40" height="40" style="margin-right:10px ;" alt="">
+                            <p>Centres d'assistance<br> <span class="p-miniscule">Guide du service client</span> </p>
+                        </div>
+                        <div class="section3_1-ligne1">
+                            <img src="img/image produit/call.png" width="40" height="40" style="margin-right:10px ;" alt="">
+                            <p>Commandez au<br> <span class="p-miniscule">30 102 21 21</span> </p>
+                        </div>
+                        <div class="section3_1-ligne1">
+                            <img src="img/image produit/HOME.png" width="40" height="40" style="margin-right:10px ;" alt="">
+                            <p>Vendez sur Jumia<br> <span class="p-miniscule">Ouvrez votre shop ici</span> </p>
+                        </div>
                     </div>
                     <div class="section3_2">
                         
                     </div>
                 </div>
             </div>
-           <!--  -->
+         
             <div class="SECTION4">
                     <div class="container-left-bottom">
                         <div onclick="myMove(1)" class="left-bottom"> <i class="fa-solid fa-angle-left"></i></div>
                     </div>
-                     <div class="section4"> <!--Applique ici :  overflow-x:scroll  -->
+                     <div class="section4">
                             <div class="container-section4" id="myAnimation">
                                 <div class="section4-element"><img src="img/imagebas/BEAUTE_ETE.jpg"  alt="" class="imgbas"></div>
                                 <div class="section4-element"><img src="img/imagebas/COURSE_ETE.jpg"  alt="" class="imgbas"></div>
@@ -103,6 +137,7 @@
     </div>
     
 
+    <script src="https://kit.fontawesome.com/d94d606bc1.js" crossorigin="anonymous"></script>
     <script src="javascript.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@ var time = 2000;
 const imgStyle = () => 
 {
     emplacement.style.width = "700px";
-    emplacement.style.height = "600px";
+    emplacement.style.height = "420px";
     emplacement.style.backgroundRepeat = "no-repeat";
 }
 autoDisplay = () => 
