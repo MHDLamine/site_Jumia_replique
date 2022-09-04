@@ -73,5 +73,66 @@ function myMove(direction)
         move.classList.add("animRight");
         }
 }
+//BUTTON RESPONSIVE
+var Btn = document.getElementById("BAR");
+Btn.addEventListener("click",resp = () => 
+{
+    bar1 = document.getElementById("bar1");
+    bar2 = document.getElementById("bar2");
+    bar3 = document.getElementById("bar3");
+    menu = document.getElementById("menu");
 
-window.onload = autoDisplay;
+    bar1.classList.toggle("bar1Over");
+    bar2.classList.toggle("bar2Over");
+    bar3.classList.toggle("bar3Over");
+    menu.classList.toggle("affiche");
+})
+
+//Images dans un tableau pour le format mobile
+const mesImages = ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg", "img/image5.jpg", "img/image6.jpg", "img/image7.jpg"]
+var x = 1;
+var y ;
+//creation container pour les images
+const div = document.createElement("div");
+div.setAttribute("class","containerMobile");
+div.style.width = "100%";
+div.style.height = "300px";
+document.body.appendChild(div)
+const img = document.createElement("img");
+function insertion (){
+    
+    img.setAttribute("src",y);
+    div.appendChild(img)
+    img.style.width = "inherit";
+    img.style.height = "inherit";
+}
+
+function automat() {
+    x++;
+
+    if ( x < mesImages.length)
+    {
+     y = mesImages[x];
+     insertion()
+    }
+    if ( x >= mesImages.length)
+    {
+        y = mesImages[0];
+        insertion()
+        x = 0;   
+    }
+    setTimeout("automat()", 4000);
+  
+}
+function automatisaionActiver(){
+    automat()
+    autoDisplay()
+}
+window.onload = automatisaionActiver;
+    //Creation de la balise img et son attribut src
+ 
+
+
+
+
+

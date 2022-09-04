@@ -5,27 +5,22 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #f7f7f7;
+    background-color:#FF9900;
 }
 .container
 {
-    background-color: #f7f7f7;
+    background-color: #FF9900;
 }
+
 .background-top
 {
-    background-color: #F68B1E;
+    background-color:#FF9900;
     display: flex;
     justify-content: center;
-}
-.image
-{
-    width: 79%;
+    width: 100%;
     height: 60px;
-    background-image: url('img/imgtop.jpg');
-    background-size: cover;
-    background-position: center;
-    
 }
+
 
 .header1
 {
@@ -33,7 +28,7 @@ body{
     justify-content: center;
     height: 26px;
     width: 100%;
-    background-color: #f7f7f7;
+    background-color: rgb(235, 235, 235);
 }
 .header1-container
 {
@@ -42,8 +37,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color:rgb(235, 235, 235);
 }
-nav p:first-child{
+.header1-container a {
+    color: #F68B1E;
+    text-decoration: none;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav p:first-child a{
     color: #F68B1E;
     opacity: 1;
 }
@@ -52,6 +56,10 @@ nav p:first-child{
     display: flex;
     color: #F68B1E;
     font-size: 14px;
+}
+.DEALS a, .log a{
+    color: grey;
+    font-weight: bold;
 }
 nav
 {
@@ -65,12 +73,16 @@ nav
 nav p:not(:first-child){
     opacity: 0.4;
 }
-.DEALS:hover{
+nav p:hover{
+    opacity: 1;
+}
+
+.DEALS a:hover{
     opacity: 1;
     color: rgb(11, 62, 113);
     font-weight: bold;
 }
-nav p:last-child:hover{
+nav .log a:hover{
     opacity: 1;
     color: #F68B1E;
 }
@@ -91,11 +103,16 @@ nav p{
 {
     display: flex;
     align-items: center;
-    font-size: 15px;
     margin: 0px 8px;
-}.login:hover{
+}
+.login p a:hover, .login:hover{
     cursor: pointer;
     color: #F68B1E;
+}
+.login p a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
 }
 .connect{
     width: 84px;
@@ -181,7 +198,7 @@ nav p{
     width: 100%;
     height: 385px;
     gap: 1rem;
-    background-color: #f7f7f7;
+    background-color: #FF9900;
     margin: 15px 0px;
 }
 .section1
@@ -232,7 +249,7 @@ li img
 }
 .background
 {
-   width :634px;
+   width :700px;
    height :420px;
 
 }
@@ -291,6 +308,7 @@ li img
     overflow-x: hidden;
     background-color: white;
     padding-left: 0px;
+   
 }
 
 .section4-element
@@ -388,10 +406,7 @@ fa-solid fa-circle-star
     background-image: url('img/jumia.gif');
 }
 
-#titre:hover
-{
-    color: blue;
-}
+
 #myAnimation
 {
     transition-duration:  1s; 
@@ -408,4 +423,126 @@ fa-solid fa-circle-star
 {
     width: inherit;
     height: inherit;
+}
+#BAR
+{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    display: none;
+}
+#bar1,#bar2,#bar3{
+    width: auto;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+.bar1Over{
+    transform: translateY(8.3px) rotate(45deg)
+}
+.bar2Over{
+    opacity: 0;
+}
+.bar3Over{
+    transform: translateY(-8.3px) rotate(-45deg)
+}
+.loginMobile{
+    display: none;
+}
+.containerMobile{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    #BAR{
+        display: flex;
+    }
+    
+    .background-top{
+        display: none;
+    }
+    .affiche{
+        position: absolute;
+        margin-left: 0px;
+        top: -200px;
+        transform: translateY(800px);
+        height: auto;
+    }
+    .section1{
+        position: absolute;
+        margin-left: 0px;
+        top: -800px;
+        transition: 1s;
+        margin-left: -205px;
+      
+    }
+
+    .section3{
+       display: flex;
+       flex-direction: row;
+       width: 100%;
+    }
+    
+    #background{
+        display: none;
+    }
+    .header1{
+        display: none;
+    }
+    .header2{
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+    .container-header2_1{
+        display: none;
+    }
+    .blocSection {
+        height: 189px;
+        width: 100%;
+        margin: 8px 0px;
+    }
+    .login{
+        display: none;
+    }
+
+    .container-right-bottom, .container-left-bottom
+    {
+        display: none;
+    }
+    .section4{
+        width: 100%;
+        height: 95px;
+        overflow-x: scroll;
+    }
+    .SECTION4{
+        margin-bottom: 20px;
+    }
+    
+    .section3_1, .section3_2{
+        height: auto;
+        width: 100%;
+    }
+    .section4-element {
+        width: 85px;
+        height: 80px;
+    }
+    .containerMobile{
+        display: block;
+    }
+    .loginMobile{
+        display: block;
+        position: absolute;
+        right: 50px;
+        font-size: 26px;
+    }
+    .loginMobile a{
+        text-decoration: none;
+        color: #F68B1E;
+    }
 }
