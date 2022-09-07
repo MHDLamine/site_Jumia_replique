@@ -208,6 +208,7 @@ nav p{
     background-color: white;
     padding: 10px;
     margin-left: 43px;
+    border-radius: 5px;
   
 }
 ul li a
@@ -459,7 +460,7 @@ fa-solid fa-circle-star
     display: none;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:1000px){
     #BAR{
         display: flex;
     }
@@ -478,11 +479,10 @@ fa-solid fa-circle-star
         position: absolute;
         margin-left: 0px;
         top: -800px;
-        transition: 1s;
-        margin-left: -205px;
-      
+        transition: 0.5s;
+        margin-left: -176px;
+        z-index: 1000;
     }
-
     .section3{
        display: flex;
        flex-direction: row;
@@ -528,6 +528,9 @@ fa-solid fa-circle-star
         height: auto;
         width: 100%;
     }
+    .section3_1-ligne1:not(:first-child) {
+        margin-top: 6px;
+    }
     .section4-element {
         width: 85px;
         height: 80px;
@@ -544,5 +547,8 @@ fa-solid fa-circle-star
     .loginMobile a{
         text-decoration: none;
         color: #F68B1E;
+    }
+    .containerMobile img{
+        animation-direction: alternate;
     }
 }
